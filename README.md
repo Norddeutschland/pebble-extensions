@@ -26,3 +26,9 @@ var GLOBAL_DATA = {{ data | ToJSon | raw }};
 ```
 
 If you've got better Ideas, just tell me :-)
+
+
+## Why not contribute those directly into the pebble template engine?
+
+That's a very good question. I will contribute anything directly into pebble but everything in this repo will add new dependencies, for example to ToJSon Filter adds a dependency to FasterXML/Jackson . This is a library that is present in lots of projects anyway but you might not want to have in a template engine just for one filter command.
+
