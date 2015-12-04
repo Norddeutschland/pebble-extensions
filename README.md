@@ -9,7 +9,7 @@ The only current extension is a filter that can be used to add datastructures to
 
 I'm using the pebble template engine with spring-pebble. Thus I have a bena that supplies my webapp with a pebble instance.
 
-```
+```JAVA
  @Bean
  public PebbleEngine pebbleEngine(final Loader templateLoader) {
    final PebbleEngine pebbleEngine = new PebbleEngine(templateLoader);
@@ -21,7 +21,7 @@ I'm using the pebble template engine with spring-pebble. Thus I have a bena that
 
 And when using pebble to generate my script / config I use this:
 
-```
+```JAVASCRIPT
 var GLOBAL_DATA = {{ data | ToJSon | raw }};
 ```
 
