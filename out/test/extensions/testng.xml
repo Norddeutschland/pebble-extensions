@@ -1,9 +1,0 @@
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="Pebble Extensions Test Suite" verbose="1">
-
-  <test name="Extension Tests">
-    <classes>
-      <class name="reloc.pebbleextensions.ToJsonFilterTest" />
-    </classes>
-  </test>
-</suite>
